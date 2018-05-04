@@ -14,10 +14,6 @@
 #include "imgui/imconfig.h"
 
 #include "imgui/imgui.h"
-#include <ctype.h>          // toupper, isprint
-#include <math.h>           // sqrtf, powf, cosf, sinf, floorf, ceilf
-#include <stdio.h>          // vsnprintf, sscanf, printf
-#include <stdlib.h>         // NULL, malloc, free, atoi
 #if defined(_MSC_VER) && _MSC_VER <= 1500 // MSVC 2008 or earlier
 #include <stddef.h>         // intptr_t
 #else
@@ -89,7 +85,7 @@ void draw_gui()
    //   ImGui::SliderFloat(labels[i].c_str(), &slider[i], 1, 128);
    //}
    const char* items[] = { "Linear", "Exponential", "Logarithm" };
-   static int item_current = 0;
+   int item_current = 1;
    ImGui::Combo("Mode", &item_current, items, IM_ARRAYSIZE(items));
    ImGui::Spacing();
    ImGui::Spacing();

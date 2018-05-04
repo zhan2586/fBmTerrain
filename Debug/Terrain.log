@@ -1,1 +1,5 @@
-﻿
+﻿  Terrain.cpp
+d:\download\fbmterrain\terrain.cpp(53): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+d:\download\fbmterrain\terrain.cpp(54): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+  Terrain.vcxproj -> D:\Download\fBmTerrain\Debug\Terrain.exe
+  Terrain.vcxproj -> D:\Download\fBmTerrain\Debug\Terrain.pdb (Full PDB)
