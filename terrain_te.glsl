@@ -62,11 +62,11 @@ float fbm (in vec2 st) {
 
 		if(item_current == 0)
 		{			
-			coord *= lacunarity;
+			coord = coord * lacunarity;
 		}
         if(item_current == 1)
 		{			
-			coord /= lacunarity;
+			coord = coord / lacunarity;
 		}
 		amplitude *= gain;  //amplitude *= 0.5;	
 	}

@@ -56,6 +56,7 @@ static GLfloat sampleY = 78.233;
 static float lacunarity = 2.0f;
 static int octaves = 8;
 static float gain = 0.5;
+static int item_current = 0;
 int linear = 0;
 int exponential = 1;
 int logarithm = 2;
@@ -85,7 +86,7 @@ void draw_gui()
    //   ImGui::SliderFloat(labels[i].c_str(), &slider[i], 1, 128);
    //}
    const char* items[] = { "Linear", "Exponential", "Logarithm" };
-   int item_current = 1;
+   //static int item_current = 0;
    ImGui::Combo("Mode", &item_current, items, IM_ARRAYSIZE(items));
    ImGui::Spacing();
    ImGui::Spacing();
