@@ -1,4 +1,4 @@
-#version 430 
+#version 430 core
 
 uniform mat4 M;
 uniform mat4 V;
@@ -17,9 +17,9 @@ out vec3 FragPos;
 
 void main(void)
 {
-	world_normal = normal_attrib;
+	//world_normal = normal_attrib;
 	//diffuse = diffuse_color;// * vec4(max(dot(l, world_normal), 0));	
-	FragPos = vec3(M * vec4(pos_attrib, 1.0));
+	//FragPos = vec3(M * vec4(pos_attrib, 1.0));
 
 	gl_Position = vec4(pos_attrib, 1.0);	
 }

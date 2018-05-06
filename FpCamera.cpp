@@ -2,7 +2,7 @@
 #include <glm/gtx/transform.hpp>
 #include <GL/freeglut.h>
 
-static const float cameraMoveSpeed = 0.5f;
+static const float cameraMoveSpeed = 0.8f;
 static const float cameraTurnSpeed = 0.05f;
 
 static glm::vec3 CamPos(0.0f);

@@ -1,4 +1,4 @@
-#version 430
+#version 430 core
 
 uniform sampler2D texture;
 uniform vec3 lightPos;  
@@ -18,12 +18,11 @@ float diff = max(dot(norm, lightDir), 0.0);
 
 void main(void)
 {   
-	//float cosTheta = clamp(dot(n, l), 0, 1);
-	vec3 diffuse = diff * lightColor;
-	float ambientStrength = 0.1;
-    vec3 ambient = ambientStrength * lightColor;
-	vec3 result = (ambient + diffuse) * objectColor;
-	fragcolor = vec4(result, 1.0);
-	fragcolor = vec4(1.0,1.0,0.5,1.0);	
+	//vec3 diffuse = diff * lightColor;
+	//float ambientStrength = 0.1;
+    //vec3 ambient = ambientStrength * lightColor;
+	//vec3 result = (ambient + diffuse) * objectColor;
+	//fragcolor = vec4(result, 1.0);
+	fragcolor = vec4(1.0,1.0,0.5,1.0);		
 }
 

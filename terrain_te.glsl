@@ -1,4 +1,4 @@
-#version 430
+#version 430 core
 
 layout(location = 0) uniform mat4 P;
 layout(location = 1) uniform mat4 V;
@@ -66,7 +66,11 @@ float fbm (in vec2 st) {
 		}
         if(item_current == 1)
 		{			
-			coord = coord / lacunarity;
+			coord = coord * exp2(lacunarity);
+		}
+		if(item_current == 2)
+		{			
+			coord = coord * log2(lacunarity);
 		}
 		amplitude *= gain;  //amplitude *= 0.5;	
 	}

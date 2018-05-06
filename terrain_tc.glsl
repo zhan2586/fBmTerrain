@@ -1,4 +1,4 @@
-#version 430
+#version 430 core
 
 layout(location = 0) uniform mat4 P;
 layout(location = 1) uniform mat4 V;
